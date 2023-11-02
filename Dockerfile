@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginxinc/nginx-unprivileged:latest
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY docker_entrypoint.sh /docker_entrypoint.sh
 
