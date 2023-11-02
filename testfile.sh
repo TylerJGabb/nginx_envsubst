@@ -1,1 +1,0 @@
-echo THE_ENV_VAR=123
