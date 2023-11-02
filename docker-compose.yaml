@@ -1,0 +1,12 @@
+version: '2.0'
+services:
+  frontend:
+    container_name: routing-dashboard
+    image: 'nginx_envsubst'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NGINX_PORT=9001
+    ports:
+      - "3000:9001"

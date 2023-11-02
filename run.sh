@@ -1,0 +1,1 @@
+docker rmi -f nginx_envsubst && docker build -t nginx_envsubst . && docker-compose down -v && docker-compose up
